@@ -179,7 +179,7 @@ lab();
 /* ---------- Activity: classify ---------- */
 const CLS = [
  ["A learner stands still on the floor.","B","Gravity and the floor’s normal force cancel."],
- ["A fruit falls 8N and speeds up.","U","Gravity is greater than air resistance."],
+ ["A fruit falls and speeds up.","U","Gravity is greater than air resistance."],
  ["A car moves in a straight line at constant velocity.","B","Constant velocity means net force is 0 N."],
  ["A car accelerates from a stop.","U","Driving force is greater than friction."],
  ["A box rests on an inclined plane.","B","Friction balances the pull down the slope."],
@@ -204,12 +204,12 @@ const V = {up: [0, 1], down: [0, -1], left: [-1, 0], right: [1, 0]};
 const ANG = {right: 0, down: 90, left: 180, up: 270};
 const FBD = [
  ["A box rests on a table.", "Box", [["Normal force", 10, "up"], ["Weight", 10, "down"]]],
- ["A fruit falls through the air.", "Fruit", [["Air resistance", 3, "up"], ["Gravity", 8, "down"]]],
+ ["A fruit falls 8N through the air.", "Fruit", [["Air resistance", 3, "up"], ["Gravity", 8, "down"]]],
  ["A car cruises at constant velocity.", "Car", [["Driving force", 500, "right"], ["Friction + drag", 500, "left"]]],
  ["A student pushes a box.", "Box", [["Push", 15, "right"], ["Friction", 9, "left"]]],
  ["An object is pulled by two forces.", "Object", [["Pull", 6, "right"], ["Pull", 2, "left"]]],
  ["Tug-of-war: Team A and Team B.", "Rope", [["Team A", 120, "left"], ["Team B", 150, "right"]]],
- ["An elevator’s cable and weight.", "Elevator", [["Cable", 4000, "up"], ["Weight", 4500, "down"]]]
+ ["An elevator’s cable 4000N and weight 4500N.", "Elevator", [["Cable", 4000, "up"], ["Weight", 4500, "down"]]]
 ];
 MAX.fbd = FBD.length;
 function netOf(f) { let x = 0, y = 0; f.forEach(a => { x += a[1] * V[a[2]][0]; y += a[1] * V[a[2]][1]; }); return Math.abs(x) + Math.abs(y) === 0 ? [0, "none"] : x ? [Math.abs(x), x > 0 ? "right" : "left"] : [Math.abs(y), y > 0 ? "up" : "down"]; }
