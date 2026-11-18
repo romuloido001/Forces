@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Balanced and Unbalanced Forces · Grade 7 Science</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14243b;--paper:#f3f6fa;--card:#fff;--bal:#0f9d6b;--balbg:#e3f6ee;--unb:#e8730c;--unbbg:#fff0e2;--blue:#1f5fbf;--line:#d3dce8;--bad:#c0392b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 Lexend,system-ui,sans-serif}
+header{background:var(--ink);color:#fff;padding:36px 20px 28px}
+.w{max-width:860px;margin:0 auto}
+h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin:0 0 8px;font-weight:800}
+h1 .b{color:#5ee0b0}h1 .u{color:#ffb066}
+header p{margin:0;opacity:.85;max-width:60ch}
+section{max-width:860px;margin:22px auto;padding:0 16px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:20px}
+h2{margin:0 0 4px;font-size:24px}
+.sub{margin:0 0 14px;color:#4a5b73;font-size:15px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}}
+.col{border-radius:10px;padding:12px 14px}
+.col.b{background:var(--balbg);border-left:6px solid var(--bal)}
+.col.u{background:var(--unbbg);border-left:6px solid var(--unb)}
+.col h3{margin:0 0 6px;font-size:18px}
+details{margin:6px 0}summary{cursor:pointer;font-weight:600}
+details p{margin:4px 0 4px 18px;font-size:15px}
+button,select,input{font:inherit}
+button{cursor:pointer;border:2px solid var(--ink);background:#fff;color:var(--ink);border-radius:8px;padding:6px 14px;font-weight:600}
+button:hover{background:#eaf0f8}
+button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+button.go{background:var(--blue);border-color:var(--blue);color:#fff}
+button.go:hover{background:#174a96}
+.q{border-top:1px solid var(--line);padding:12px 0}
+.q:first-of-type{border-top:0}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:6px}
+.fb{font-size:15px;margin-top:6px;min-height:1px}
+.ok{color:var(--bal);font-weight:600}.no{color:var(--bad);font-weight:600}
+.lab{background:var(--ink);color:#fff;border-radius:14px;padding:18px}
+.lab h2{color:#fff}.lab .sub{color:#b9c7dc}
+.lab svg{width:100%;height:auto;background:#1d3557;border-radius:10px;display:block}
+.sl{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0}
+@media(max-width:640px){.sl{grid-template-columns:1fr}}
+.sl label{display:block;font-size:15px}
+.sl input[type=range]{width:100%;accent-color:#ffb066}
+.read{font-weight:800;font-size:22px;margin:6px 0}
+.pill{display:inline-block;border-radius:99px;padding:2px 14px;font-size:16px}
+.pill.b{background:var(--bal)}.pill.u{background:var(--unb)}
+.lab button{background:#2b4a7a;border-color:#6f93c9;color:#fff}
+.fbd{width:220px;max-width:100%;background:#f7f9fc;border:1px solid var(--line);border-radius:8px;flex:none}
+.prob{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start}
+.prob>div{flex:1;min-width:230px}
+input[type=number],input[type=text],select,textarea{border:2px solid var(--line);border-radius:8px;padding:5px 8px;background:#fff;color:var(--ink)}
+input[type=number]{width:90px}
+textarea{width:100%;min-height:64px;font:inherit}
+.mc label{display:block;padding:6px 10px;border:2px solid var(--line);border-radius:8px;margin:5px 0;cursor:pointer}
+.mc label:has(input:checked){border-color:var(--blue);background:#eaf1fc}
+.score{float:right;font-weight:800;color:var(--blue)}
+.id{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:640px){.id{grid-template-columns:1fr}}
+.id input{width:100%}
+#res{margin-top:14px;font-size:18px}
+footer{text-align:center;color:#6b7b92;font-size:14px;padding:20px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="w">
+<h1>Balanced and Unbalanced Forces</h1>
+<p>Grade 7 Science. Forces act between objects, can be measured in newtons (N), and can change an object’s motion. Explore, practice, then send your results to your teacher.</p>
+</div></header>
+
+<section><div class="card">
+<h2>Who is learning today?</h2>
+<p class="sub">Your name and section are sent with your results.</p>
+<div class="id">
+<input id="name" type="text" placeholder="Full name" autocomplete="name" aria-label="Full name">
+<input id="sec" type="text" placeholder="Section (e.g., Grade 7 – Rizal)" aria-label="Section">
+</div></div></section>
+
+<section><div class="card">
+<h2>1. Key ideas</h2>
+<p class="sub">Tap each example to see why it is balanced or unbalanced.</p>
+<ul>
+<li>A <b>force</b> is a push or pull between objects. Forces always act in pairs.</li>
+<li>Forces are measured with a force meter (spring scale) in <b>newtons (N)</b>.</li>
+<li><b>Net force</b> is what is left after adding forces that point in opposite directions.</li>
+</ul>
+<div class="cols">
+<div class="col b"><h3>Balanced: net force = 0 N</h3><p class="sub">No change in motion: at rest or constant velocity.</p><div id="exB"></div></div>
+<div class="col u"><h3>Unbalanced: net force ≠ 0 N</h3><p class="sub">Speed, direction, or both can change.</p><div id="exU"></div></div>
+</div></div></section>
+
+<section><div class="lab">
+<h2>2. Force lab: tug the box</h2>
+<p class="sub">Set a push from each side. Watch the net force and the motion. Try to make the box move at a steady speed.</p>
+<svg id="labsvg" viewBox="0 0 700 190" role="img" aria-label="A box pushed from the left and the right"></svg>
+<div class="sl">
+<label>Push from the left (→): <b id="lv">0</b> N<input id="lf" type="range" min="0" max="20" value="10"></label>
+<label>Push from the right (←): <b id="rv">0</b> N<input id="rf" type="range" min="0" max="20" value="10"></label>
+</div>
+<div class="read" id="labread"></div>
+<div class="row"><button data-p="10,10">Balanced</button><button data-p="15,5">Push right</button><button data-p="4,12">Push left</button><button id="stopb">Stop the box</button></div>
+<p class="sub" style="margin-top:10px">Notice: with balanced forces the box keeps its current motion. It only stops if you make the net force oppose the motion.</p>
+</div></section>
+
+<section><div class="card"><span class="score" id="s_cls"></span>
+<h2>3. Classify the forces</h2>
+<p class="sub">Is the net force zero (balanced) or not (unbalanced)?</p>
+<div id="cls"></div></div></section>
+
+<section><div class="card"><span class="score" id="s_fbd"></span>
+<h2>4. Read the free-body diagram</h2>
+<p class="sub">Longer arrows mean bigger forces. Find the net force (in N) and its direction.</p>
+<div id="fbd"></div></div></section>
+
+<section><div class="card"><span class="score" id="s_prd"></span>
+<h2>5. Predict the effect</h2>
+<p class="sub">Choose the direction of the net force and what happens to the motion.</p>
+<div id="prd"></div></div></section>
+
+<section><div class="card"><span class="score" id="s_mc"></span>
+<h2>6. Quick check</h2>
+<div id="mc"></div></div></section>
+
+<section><div class="card">
+<h2>7. Exit ticket: write it in your own words</h2>
+<p class="sub">Your teacher reads these answers.</p>
+<div id="wr"></div></div></section>
+
+<section><div class="card">
+<h2>Send your results</h2>
+<p class="sub">Finish what you can, then send. You can answer the rest and send again.</p>
+<button class="go" id="send">Send to my teacher</button>
+<div id="res" role="status"></div></div></section>
+
+<footer>Grade 7 Science · Balanced and Unbalanced Forces · Think like a scientist: observe, analyze.</footer>
+
+<script>
+// Paste your deployed Google Apps Script Web App URL here (see Code.gs).
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzz59yd79quMYi6-C2AZTgSJ0i5HSkbQ9k-n7xjTO7Fl1ifVugXLBa0cbiM__88iTrO/exec";
+const $ = s => document.querySelector(s);
+const state = {cls:{}, fbd:{}, prd:{}, mc:{}};
+const MAX = {cls:0, fbd:0, prd:0, mc:0};
+
+/* ---------- Key ideas ---------- */
+const EXB = [["Book resting on a desk","Gravity pulls it down and the desk pushes up equally."],["Hanging lamp","Cable pulls up with the same force gravity pulls down."],["Tug-of-war tie","Both teams pull equally, so the rope does not move."],["Skydiver at terminal velocity","Air resistance equals weight, so speed stays constant."],["Elevator rising at steady speed","Cable force equals weight, so there is no acceleration."],["Boat floating","Buoyant force up equals weight down."]];
+const EXU = [["Kicked soccer ball","The kick is an unbalanced force that speeds the ball up."],["Braking bicycle","Friction from the brakes acts opposite the motion, so it slows."],["Rocket at launch","Thrust is greater than weight, so it accelerates upward."],["Parachute opening","Air resistance suddenly exceeds weight, so the skydiver slows."],["Ball thrown upward","Gravity pulls down while it moves up, so it slows, stops, then falls."],["Shopping cart pushed","A push bigger than friction makes the cart speed up."]];
+const fill = (id, arr) => $(id).innerHTML = arr.map(a => `<details><summary>${a[0]}</summary><p>${a[1]}</p></details>`).join("");
+fill("#exB", EXB); fill("#exU", EXU);
+
+/* ---------- Force lab ---------- */
+let pos = 350, vel = 0;
+const lf = $("#lf"), rf = $("#rf");
+function arrow(x, y, len, dir, col) {
+  if (len < 1) return "";
+  const x2 = x + dir * len, h = 12 * dir;
+  return `<line x1="${x}" y1="${y}" x2="${x2}" y2="${y}" stroke="${col}" stroke-width="8"/><polygon points="${x2 + h},${y} ${x2},${y - 12} ${x2},${y + 12}" fill="${col}"/>`;
+}
+function lab() {
+  const L = +lf.value, R = +rf.value, net = L - R;
+  vel += net * 0.0025; vel = Math.max(-4, Math.min(4, vel));
+  pos += vel; if (pos > 740) pos = -40; if (pos < -40) pos = 740;
+  $("#lv").textContent = L; $("#rv").textContent = R;
+  const bx = pos - 40;
+  $("#labsvg").innerHTML = `<rect x="0" y="140" width="700" height="50" fill="#0e1f38"/>
+  <rect x="${bx}" y="80" width="80" height="60" rx="6" fill="#d8a45f" stroke="#fff" stroke-width="3"/>
+  ${arrow(bx - 6 - L * 5, 110, L * 5, 1, "#5ee0b0")}${arrow(bx + 86 + R * 5, 110, R * 5, -1, "#ffb066")}
+  <text x="12" y="28" fill="#fff" font-size="16">Speed: ${Math.abs(vel).toFixed(1)} ${vel > 0.05 ? "→" : vel < -0.05 ? "←" : "(at rest)"}</text>`;
+  const bal = net === 0;
+  $("#labread").innerHTML = `Net force = ${Math.abs(net)} N${net ? (net > 0 ? " to the right" : " to the left") : ""} <span class="pill ${bal ? "b" : "u"}">${bal ? "Balanced" : "Unbalanced"}</span>`;
+  requestAnimationFrame(lab);
+}
+document.querySelectorAll("[data-p]").forEach(b => b.onclick = () => { const p = b.dataset.p.split(","); lf.value = p[0]; rf.value = p[1]; });
+$("#stopb").onclick = () => { vel = 0; lf.value = 10; rf.value = 10; };
+lab();
+
+/* ---------- Activity: classify ---------- */
+const CLS = [
+ ["A learner stands still on the floor.","B","Gravity and the floor’s normal force cancel."],
+ ["A fruit falls and speeds up.","U","Gravity is greater than air resistance."],
+ ["A car moves in a straight line at constant velocity.","B","Constant velocity means net force is 0 N."],
+ ["A car accelerates from a stop.","U","Driving force is greater than friction."],
+ ["A box rests on an inclined plane.","B","Friction balances the pull down the slope."],
+ ["A bicycle slows down when the brakes are used.","U","Braking force acts opposite the motion."],
+ ["A book rests on a desk.","B","Weight and normal force are equal and opposite."],
+ ["A soccer ball curves in the air after a kick.","U","A net force changes its direction."],
+ ["A hockey puck slides across ice and gradually slows.","U","Friction is a net force opposite the motion."],
+ ["An elevator rises at a steady speed.","B","Cable force equals weight, so there is no change in speed."]
+];
+MAX.cls = CLS.length;
+$("#cls").innerHTML = CLS.map((c, i) => `<div class="q"><b>${i + 1}.</b> ${c[0]}<div class="row"><button data-i="${i}" data-a="B">Balanced</button><button data-i="${i}" data-a="U">Unbalanced</button></div><div class="fb" id="cf${i}"></div></div>`).join("");
+$("#cls").onclick = e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const i = +b.dataset.i, ok = b.dataset.a === CLS[i][1];
+  state.cls[i] = ok;
+  $("#cf" + i).innerHTML = `<span class="${ok ? "ok" : "no"}">${ok ? "Correct." : "Not quite."}</span> It is ${CLS[i][1] === "B" ? "balanced" : "unbalanced"}: ${CLS[i][2]}`;
+  upd("cls");
+};
+
+/* ---------- Activity: free-body diagrams ---------- */
+const V = {up: [0, 1], down: [0, -1], left: [-1, 0], right: [1, 0]};
+const ANG = {right: 0, down: 90, left: 180, up: 270};
+const FBD = [
+ ["A box rests on a table.", "Box", [["Normal force", 10, "up"], ["Weight", 10, "down"]]],
+ ["A fruit falls through the air.", "Fruit", [["Air resistance", 3, "up"], ["Gravity", 8, "down"]]],
+ ["A car cruises at constant velocity.", "Car", [["Driving force", 500, "right"], ["Friction + drag", 500, "left"]]],
+ ["A student pushes a box.", "Box", [["Push", 15, "right"], ["Friction", 9, "left"]]],
+ ["An object is pulled by two forces.", "Object", [["Pull", 6, "right"], ["Pull", 2, "left"]]],
+ ["Tug-of-war: Team A and Team B.", "Rope", [["Team A", 120, "left"], ["Team B", 150, "right"]]],
+ ["An elevator’s cable and weight.", "Elevator", [["Cable", 4000, "up"], ["Weight", 4500, "down"]]]
+];
+MAX.fbd = FBD.length;
+function netOf(f) { let x = 0, y = 0; f.forEach(a => { x += a[1] * V[a[2]][0]; y += a[1] * V[a[2]][1]; }); return Math.abs(x) + Math.abs(y) === 0 ? [0, "none"] : x ? [Math.abs(x), x > 0 ? "right" : "left"] : [Math.abs(y), y > 0 ? "up" : "down"]; }
+function fbdSvg(name, f) {
+  const m = Math.max(...f.map(a => a[1]));
+  const arr = f.map(a => {
+    const len = 18 + a[1] / m * 50, d = a[2];
+    const lx = V[d][0] * (len + 26), ly = -V[d][1] * (len + 26);
+    return `<g transform="translate(110 80) rotate(${ANG[d]})"><line x1="22" y1="0" x2="${len + 22}" y2="0" stroke="${d === "left" || d === "down" ? "#c0392b" : "#1f5fbf"}" stroke-width="4"/><polygon points="${len + 32},0 ${len + 22},-7 ${len + 22},7" fill="${d === "left" || d === "down" ? "#c0392b" : "#1f5fbf"}"/></g><text x="${110 + lx * (V[d][0] ? 1 : 1)}" y="${80 + ly + (V[d][1] ? (V[d][1] > 0 ? -4 : 12) : -8)}" font-size="11" text-anchor="middle" fill="#14243b">${a[0]} ${a[1]} N</text>`;
+  }).join("");
+  return `<svg class="fbd" viewBox="0 0 220 160" role="img" aria-label="Free-body diagram of ${name}"><rect x="90" y="60" width="40" height="40" fill="#e8edf5" stroke="#14243b" stroke-width="2"/><text x="110" y="84" font-size="10" text-anchor="middle">${name}</text>${arr}</svg>`;
+}
+$("#fbd").innerHTML = FBD.map((p, i) => `<div class="q prob">${fbdSvg(p[1], p[2])}<div><b>${i + 1}.</b> ${p[0]}<div class="row">Net force <input type="number" min="0" id="fn${i}" aria-label="Net force in newtons"> N, direction
+<select id="fd${i}"><option value="">choose</option><option>none</option><option>up</option><option>down</option><option>left</option><option>right</option></select>
+<button data-i="${i}">Check</button></div><div class="fb" id="ff${i}"></div></div></div>`).join("");
+$("#fbd").onclick = e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const i = +b.dataset.i, [n, d] = netOf(FBD[i][2]);
+  const ok = +$("#fn" + i).value === n && $("#fd" + i).value === d && $("#fn" + i).value !== "";
+  state.fbd[i] = ok;
+  const big = FBD[i][2].map(a => a[1]).sort((a, c) => c - a);
+  $("#ff" + i).innerHTML = `<span class="${ok ? "ok" : "no"}">${ok ? "Correct." : "Try again or read the hint."}</span> ${n ? `Net force = ${big[0]} − ${big[1]} = ${n} N ${d}.` : "Equal and opposite forces: net force = 0 N."}`;
+  upd("fbd");
+};
+
+/* ---------- Activity: predict ---------- */
+const PRD = [
+ ["A bicycle speeds up while moving forward.", "Forward", "Speeds up"],
+ ["A ball moving forward is pushed sideways.", "Sideways", "Changes direction"],
+ ["A moving car brakes and slows down.", "Backward", "Slows down"],
+ ["A fruit falls and speeds up.", "Downward", "Speeds up"],
+ ["A spacecraft coasts in empty space at constant velocity.", "Zero", "No change"],
+ ["A car goes around a curve at constant speed.", "Sideways", "Changes direction"]
+];
+MAX.prd = PRD.length;
+const dirs = ["Forward", "Backward", "Sideways", "Downward", "Zero"], effs = ["Speeds up", "Slows down", "Changes direction", "No change"];
+const opts = a => `<option value="">choose</option>` + a.map(x => `<option>${x}</option>`).join("");
+$("#prd").innerHTML = PRD.map((p, i) => `<div class="q"><b>${i + 1}.</b> ${p[0]}<div class="row">Net force: <select id="pd${i}">${opts(dirs)}</select> Effect: <select id="pe${i}">${opts(effs)}</select><button data-i="${i}">Check</button></div><div class="fb" id="pf${i}"></div></div>`).join("");
+$("#prd").onclick = e => {
+  const b = e.target.closest("button"); if (!b) return;
+  const i = +b.dataset.i, ok = $("#pd" + i).value === PRD[i][1] && $("#pe" + i).value === PRD[i][2];
+  state.prd[i] = ok;
+  $("#pf" + i).innerHTML = `<span class="${ok ? "ok" : "no"}">${ok ? "Correct." : "Not yet."}</span> Answer: net force ${PRD[i][1].toLowerCase()}; ${PRD[i][2].toLowerCase()}.`;
+  upd("prd");
+};
+
+/* ---------- Quick check ---------- */
+const MC = [
+ ["What unit is used to measure force?", ["Newton (N)", "Joule (J)", "Meter (m)", "Kilogram (kg)"], 0],
+ ["Which instrument measures force?", ["Thermometer", "Spring scale (force meter)", "Stopwatch", "Ruler"], 1],
+ ["The net force on an object is 0 N. What is true?", ["It must be at rest", "Its motion does not change", "It speeds up", "It changes direction"], 1],
+ ["A box moves at constant velocity. The forces on it are…", ["unbalanced", "balanced", "zero", "increasing"], 1],
+ ["In a free-body diagram, a longer arrow means…", ["a greater force", "a faster object", "a heavier arrow", "a longer time"], 0],
+ ["Which can an unbalanced force change?", ["Speed only", "Direction only", "Speed, direction, or both", "Nothing"], 2]
+];
+MAX.mc = MC.length;
+$("#mc").innerHTML = MC.map((q, i) => `<div class="q mc"><b>${i + 1}.</b> ${q[0]}${q[1].map((o, j) => `<label><input type="radio" name="m${i}" value="${j}"> ${o}</label>`).join("")}<div class="fb" id="mf${i}"></div></div>`).join("");
+$("#mc").onchange = e => {
+  const i = +e.target.name.slice(1), ok = +e.target.value === MC[i][2];
+  state.mc[i] = ok;
+  $("#mf" + i).innerHTML = `<span class="${ok ? "ok" : "no"}">${ok ? "Correct." : "Not quite. Answer: " + MC[i][1][MC[i][2]]}</span>`;
+  upd("mc");
+};
+
+/* ---------- Exit ticket ---------- */
+const WR = ["Define balanced forces in one sentence.", "Give one everyday example of unbalanced forces.", "Can an object be moving while the forces on it are balanced? Explain.", "Explain one way unbalanced forces can change an object’s motion."];
+$("#wr").innerHTML = WR.map((q, i) => `<div class="q"><b>${i + 1}.</b> ${q}<textarea id="w${i}" aria-label="Answer ${i + 1}"></textarea></div>`).join("");
+
+/* ---------- Scores + send ---------- */
+function upd(k) { const g = Object.values(state[k]).filter(Boolean).length; $("#s_" + k).textContent = g + " / " + MAX[k]; }
+["cls", "fbd", "prd", "mc"].forEach(upd);
+$("#send").onclick = async () => {
+  const name = $("#name").value.trim(), res = $("#res");
+  if (!name) { res.innerHTML = '<span class="no">Enter your name at the top first.</span>'; $("#name").focus(); return; }
+  const sc = {}; let got = 0, max = 0;
+  for (const k in MAX) { sc[k] = Object.values(state[k]).filter(Boolean).length; got += sc[k]; max += MAX[k]; }
+  const payload = {timestamp: new Date().toISOString(), name, section: $("#sec").value.trim(), classify: sc.cls, fbd: sc.fbd, predict: sc.prd, quiz: sc.mc, total: got, max,
+    written: WR.map((q, i) => $("#w" + i).value.trim()), answers: state};
+  res.textContent = "Sending…";
+  try {
+    if (SCRIPT_URL.startsWith("PASTE")) throw new Error("no url");
+    await fetch(SCRIPT_URL, {method: "POST", mode: "no-cors", headers: {"Content-Type": "text/plain;charset=utf-8"}, body: JSON.stringify(payload)});
+    res.innerHTML = `<span class="ok">Sent!</span> Auto-scored: ${got} / ${max}. Your teacher will read your written answers.`;
+  } catch (err) {
+    res.innerHTML = `<span class="no">Could not send.</span> Check your internet connection and press the button again. (Teacher: set SCRIPT_URL in index.html.)`;
+  }
+};
+</script>
+</body>
+</html>
